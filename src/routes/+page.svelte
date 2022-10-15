@@ -1,3 +1,63 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { Dialog } from '$lib';
+	import Thing from '../components/Thing.svelte';
+</script>
+
+<h1>Modals the <em>easy</em> way</h1>
+<p>
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque
+	ipsa ipsum reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea,
+	beatae vitae ipsam nemo.
+</p>
+<p>
+	Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi
+	repellat porro culpa molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique
+	repellendus nam velit natus a soluta et.
+</p>
+<p>
+	Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero
+	nisi ullam consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores
+	molestias sed assumenda alias.
+</p>
+<p>
+	Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo
+	provident, possimus alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus
+	facilis fugiat repudiandae nobis neque nam, vel odio?
+</p>
+
+<Dialog let:close>
+	<h1>Hellooo!!!!</h1>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa tempora porro architecto,
+		asperiores beatae.
+	</p>
+	<Thing></Thing>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci explicabo eius
+		totam, aut unde, amet hic velit suscipit, officiis modi at itaque eum! Placeat quidem
+		voluptatibus molestias repudiandae quasi?
+	</p>
+	<button on:click={close}>close</button>
+</Dialog>
+
+<h1>Modals the <em>easy</em> way</h1>
+<p>
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque
+	ipsa ipsum reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea,
+	beatae vitae ipsam nemo.
+</p>
+<p>
+	Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi
+	repellat porro culpa molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique
+	repellendus nam velit natus a soluta et.
+</p>
+<p>
+	Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero
+	nisi ullam consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores
+	molestias sed assumenda alias.
+</p>
+<p>
+	Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo
+	provident, possimus alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus
+	facilis fugiat repudiandae nobis neque nam, vel odio?
+</p>
