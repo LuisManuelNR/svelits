@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Dialog } from '$lib';
-	import Thing from '../components/Thing.svelte';
+	import { Dialog } from '$lib'
+	import Thing from '../components/Thing.svelte'
 </script>
 
 <h1>Modals the <em>easy</em> way</h1>
@@ -31,7 +31,7 @@
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa tempora porro architecto,
 		asperiores beatae.
 	</p>
-	<Thing></Thing>
+	<Thing />
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci explicabo eius
 		totam, aut unde, amet hic velit suscipit, officiis modi at itaque eum! Placeat quidem
