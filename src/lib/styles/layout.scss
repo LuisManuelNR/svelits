@@ -1,0 +1,70 @@
+/*===============
+  *width helpers*
+================*/
+@for $i from 0 through 4 {
+  .w-#{25 * $i} {
+    width: 25% * $i;
+  }
+}
+.w-auto {
+  width: auto;
+}
+.w-screen {
+  width: 100vw;
+}
+
+/*===============
+  *flex helpers*
+================*/
+.d-flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.column {
+  flex-direction: column;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.grow {
+  flex-grow: 1;
+}
+.shrink {
+  flex-shrink: 1;
+}
+
+/*===============
+  *gaps helpers*
+================*/
+.gap-0 {
+  gap: 0;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}

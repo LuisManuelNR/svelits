@@ -1,63 +1,24 @@
 <script lang="ts">
-	import { Dialog } from '$lib'
-	import Thing from '../components/Thing.svelte'
+	import { App, Grid } from '$lib'
+	import Layouts from '../components/Layouts.svelte'
 </script>
 
-<h1>Modals the <em>easy</em> way</h1>
-<p>
-	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque
-	ipsa ipsum reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea,
-	beatae vitae ipsam nemo.
-</p>
-<p>
-	Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi
-	repellat porro culpa molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique
-	repellendus nam velit natus a soluta et.
-</p>
-<p>
-	Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero
-	nisi ullam consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores
-	molestias sed assumenda alias.
-</p>
-<p>
-	Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo
-	provident, possimus alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus
-	facilis fugiat repudiandae nobis neque nam, vel odio?
-</p>
+<App>
+	<nav class="side-nav">hola</nav>
+	<main>
+		<Layouts />
+	</main>
+</App>
 
-<Dialog let:close>
-	<h1>Hellooo!!!!</h1>
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa tempora porro architecto,
-		asperiores beatae.
-	</p>
-	<Thing />
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci explicabo eius
-		totam, aut unde, amet hic velit suscipit, officiis modi at itaque eum! Placeat quidem
-		voluptatibus molestias repudiandae quasi?
-	</p>
-	<button on:click={close}>close</button>
-</Dialog>
-
-<h1>Modals the <em>easy</em> way</h1>
-<p>
-	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias dicta quibusdam cumque
-	ipsa ipsum reiciendis animi, officia provident veniam quis delectus minima earum suscipit ea,
-	beatae vitae ipsam nemo.
-</p>
-<p>
-	Alias, architecto sapiente nostrum id, sed explicabo numquam aspernatur ratione qui excepturi
-	repellat porro culpa molestiae? Culpa dolorem commodi cupiditate, eos deleniti similique
-	repellendus nam velit natus a soluta et.
-</p>
-<p>
-	Fugiat ratione impedit officiis? Eligendi sapiente culpa tenetur esse quo reiciendis illum vero
-	nisi ullam consequatur illo molestiae, nihil eaque. Esse asperiores tenetur natus! Quo asperiores
-	molestias sed assumenda alias.
-</p>
-<p>
-	Sequi quo animi, nostrum laboriosam veritatis consequatur. Eos cumque unde porro explicabo
-	provident, possimus alias magni pariatur quis consequuntur voluptatum? Debitis necessitatibus
-	facilis fugiat repudiandae nobis neque nam, vel odio?
-</p>
+<style>
+	:global(.sv-app) {
+		display: grid;
+		grid-template-columns: 250px minmax(0, 1fr);
+		gap: 2rem;
+		color: rgb(213, 213, 213);
+	}
+	.side-nav {
+		min-height: 100%;
+		background-color: rgb(50, 50, 50);
+	}
+</style>
