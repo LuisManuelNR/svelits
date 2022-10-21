@@ -1,0 +1,20 @@
+.btn {
+  --btn-border: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  align-items: center;
+  background: var(--surface-4);
+  border: var(--size-1) solid var(--btn-border);
+  border-radius: var(--size-2);
+  box-shadow: var(--shadow-2), 0 1px var(--surface-3);
+  color: var(--text-1);
+  display: inline-flex;
+  font-weight: 700;
+  gap: var(--size-2);
+  justify-content: center;
+  padding-block: .75ch;
+  padding-inline: 1.75ch;
+  text-align: center;
+  text-shadow: 0 1px 0 var(--surface-1);
+  user-select: none
+}
