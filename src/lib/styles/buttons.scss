@@ -1,20 +1,68 @@
 .btn {
-  --btn-border: transparent;
+  --btn-outline-offset: -6px;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   align-items: center;
-  background: var(--surface-4);
-  border: var(--size-1) solid var(--btn-border);
-  border-radius: var(--size-2);
-  box-shadow: var(--shadow-2), 0 1px var(--surface-3);
+  border: none;
+  background-color: var(--surface-4);
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: transparent;
+  outline-offset: var(--btn-outline-offset);
+  border-radius: var(--size-1);
+  box-shadow: var(--shadow-2), inset 0 -2px #0000004d;
   color: var(--text-1);
   display: inline-flex;
   font-weight: 700;
   gap: var(--size-2);
   justify-content: center;
-  padding-block: .75ch;
   padding-inline: 1.75ch;
   text-align: center;
-  text-shadow: 0 1px 0 var(--surface-1);
-  user-select: none
+  user-select: none;
+  text-transform: capitalize;
+  min-width: 12ch;
+  height: 42px;
+  line-height: 0;
+  transition: all 200ms ease;
+
+  &.outlined {
+    outline-color: #ffffff42;
+    background-color: transparent;
+    --btn-outline-offset: -2px;
+    // &:hover {
+    //   outline-width: 20px;
+    //   color: var(--text-1);
+    //   --btn-outline-offset: -20px;
+    // }
+  }
+  &.flat {
+    --btn-shadow: none;
+  }
+  &.block {
+    width: 100%;
+  }
+  &:active {
+    outline-color: #ffffff52;
+    animation: dropWave 1s forwards;
+  }
+  &:focus-within {
+    outline-width: 2px;
+    outline-color: inherit;
+    outline-offset: 0px;
+  }
+  &:hover {
+    outline-color: inherit;
+    --btn-outline-offset: 0px;
+  }
+}
+
+@keyframes dropWave {
+  0% {
+    outline-width: 4px;
+  }
+  50%, 100% {
+    outline-color: #ffffff00;
+    outline-width: 1px;
+    outline-offset: 15px;
+  }
 }

@@ -1,0 +1,97 @@
+@for $i from 0 through 6 {
+  .mb-#{$i} {
+    margin-bottom: var(--size-#{$i});
+  }
+  .ml-#{$i} {
+    margin-left: var(--size-#{$i});
+  }
+  .mr-#{$i} {
+    margin-right: var(--size-#{$i});
+  }
+  .mt-#{$i} {
+    margin-top: var(--size-#{$i});
+  }
+  .ma-#{$i} {
+    margin: var(--size-#{$i});
+  }
+  .mx-#{$i} {
+    margin-left: var(--size-#{$i});
+    margin-right: var(--size-#{$i});
+  }
+  .my-#{$i} {
+    margin-top: var(--size-#{$i});
+    margin-bottom: var(--size-#{$i});
+  }
+}
+
+@for $i from 0 through 6 {
+  .mb-n#{$i} {
+    margin-bottom: calc(var(--size-#{$i}) * -1);
+  }
+  .ml-n#{$i} {
+    margin-left: calc(var(--size-#{$i}) * -1);
+  }
+  .mr-n#{$i} {
+    margin-right: calc(var(--size-#{$i}) * -1);
+  }
+  .mt-n#{$i} {
+    margin-top: calc(var(--size-#{$i}) * -1);
+  }
+  .ma-n#{$i} {
+    margin: calc(var(--size-#{$i}) * -1);
+  }
+  .mx-n#{$i} {
+    margin-left: calc(var(--size-#{$i}) * -1);
+    margin-right: calc(var(--size-#{$i}) * -1);
+  }
+  .my-n#{$i} {
+    margin-top: calc(var(--size-#{$i}) * -1);
+    margin-bottom: calc(var(--size-#{$i}) * -1);
+  }
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@for $i from 0 through 6 {
+  .pb-#{$i} {
+    padding-bottom: var(--size-#{$i});
+  }
+  .pl-#{$i} {
+    padding-left: var(--size-#{$i});
+  }
+  .pr-#{$i} {
+    padding-right: var(--size-#{$i});
+  }
+  .pt-#{$i} {
+    padding-top: var(--size-#{$i});
+  }
+  .pa-#{$i} {
+    padding: var(--size-#{$i});
+  }
+  .px-#{$i} {
+    padding-left: var(--size-#{$i});
+    padding-right: var(--size-#{$i});
+  }
+  .py-#{$i} {
+    padding-top: var(--size-#{$i});
+    padding-bottom: var(--size-#{$i});
+  }
+}
