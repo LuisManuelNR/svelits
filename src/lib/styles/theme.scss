@@ -1,0 +1,158 @@
+:root {
+  --brand-light: #ff6047;
+  --n-100-light: #f0f1f4;
+  --n-200-light: #e1e4ea;
+  --n-300-light: #d3d7df;
+  --n-400-light: #c4c9d4;
+  --error-light: #D72638;
+  --success-light: #169873;
+  --info-light: #FFD3BA;
+  --contrast-light: #212529;
+
+  --brand-dark: #D64933;
+  --n-100-dark: #555e77;
+  --n-200-dark: #495269;
+  --n-300-dark: #404859;
+  --n-400-dark: #363c4a;
+  --error-dark: #D72638;
+  --success-dark: #169873;
+  --info-dark: #FFD3BA;
+  --contrast-dark: #d8dee3;
+
+}
+
+:root {
+  color-scheme: light;
+  --brand: var(--brand-light);
+  --n-100: var(--n-100-light);
+  --n-200: var(--n-200-light);
+  --n-300: var(--n-300-light);
+  --n-400: var(--n-400-light);
+  --error: var(--error-light);
+  --success: var(--success-light);
+  --info: var(--info-light);
+  --contrast: var(--contrast-light);
+}
+
+.light-theme {
+  color-scheme: light;
+  --brand: var(--brand-light);
+  --n-100: var(--n-100-light);
+  --n-200: var(--n-200-light);
+  --n-300: var(--n-300-light);
+  --n-400: var(--n-400-light);
+  --error: var(--error-light);
+  --success: var(--success-light);
+  --info: var(--info-light);
+  --contrast: var(--contrast-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --brand: var(--brand-dark);
+    --n-100: var(--n-100-dark);
+    --n-200: var(--n-200-dark);
+    --n-300: var(--n-300-dark);
+    --n-400: var(--n-400-dark);
+    --error: var(--error-dark);
+    --success: var(--success-dark);
+    --info: var(--info-dark);
+    --contrast: var(--contrast-dark);
+  }
+
+}
+
+.dark-theme {
+  color-scheme: dark;
+  --brand: var(--brand-dark);
+  --n-100: var(--n-100-dark);
+  --n-200: var(--n-200-dark);
+  --n-300: var(--n-300-dark);
+  --n-400: var(--n-400-dark);
+  --error: var(--error-dark);
+  --success: var(--success-dark);
+  --info: var(--info-dark);
+  --contrast: var(--contrast-dark);
+}
+
+.brand {
+  background-color: var(--brand);
+  outline-color: var(--brand);
+}
+
+.brand-text {
+  color: var(--brand)
+}
+
+.n-100 {
+  background-color: var(--n-100);
+  outline-color: var(--n-100);
+}
+
+.n-100-text {
+  color: var(--n-100)
+}
+
+.n-200 {
+  background-color: var(--n-200);
+  outline-color: var(--n-200);
+}
+
+.n-200-text {
+  color: var(--n-200)
+}
+
+.n-300 {
+  background-color: var(--n-300);
+  outline-color: var(--n-300);
+}
+
+.n-300-text {
+  color: var(--n-300)
+}
+
+.n-400 {
+  background-color: var(--n-400);
+  outline-color: var(--n-400);
+}
+
+.n-400-text {
+  color: var(--n-400)
+}
+
+.error {
+  background-color: var(--error);
+  outline-color: var(--error);
+}
+
+.error-text {
+  color: var(--error)
+}
+
+.success {
+  background-color: var(--success);
+  outline-color: var(--success);
+}
+
+.success-text {
+  color: var(--success)
+}
+
+.info {
+  background-color: var(--info);
+  outline-color: var(--info);
+}
+
+.info-text {
+  color: var(--info)
+}
+
+.contrast {
+  background-color: var(--contrast);
+  outline-color: var(--contrast);
+}
+
+.contrast-text {
+  color: var(--contrast)
+}

@@ -2,14 +2,6 @@
   --font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
   --font-size: 1rem;
 
-  --brand: hsl(151deg 61% 49%);
-  --text-1: hsl(210deg 14% 83%);
-  --text-2: hsl(210deg 14% 75%);
-  --surface-1: hsl(210, 11%, 15%);
-  --surface-2: hsl(210deg 11% 19%);
-  --surface-3: hsl(206deg 10% 29%);
-  --surface-4: hsl(210deg 9% 31%);
-
   --size-000: -.5rem;
   --size-00: -.25rem;
   --size-1: .25rem;
@@ -52,7 +44,8 @@
   --size-xxl: 1920px;
 
   --shadow-color: 220 40% 2%;
-  --shadow-strength: 25%;
+  --shadow-strength: 9%;
+
   --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
   --shadow-2: 
     0 3px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),

@@ -1,17 +1,11 @@
 .btn {
-  --btn-outline-offset: -6px;
+  --btn-shadow: var(--shadow-2), inset 0 -2px #00000021;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   align-items: center;
-  border: none;
-  background-color: var(--surface-4);
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: transparent;
-  outline-offset: var(--btn-outline-offset);
+  background-color: var(--n-100);
   border-radius: var(--size-1);
-  box-shadow: var(--shadow-2), inset 0 -2px #0000004d;
-  color: var(--text-1);
+  box-shadow: var(--btn-shadow);
   display: inline-flex;
   font-weight: 700;
   gap: var(--size-2);
@@ -23,46 +17,72 @@
   min-width: 12ch;
   height: 42px;
   line-height: 0;
-  transition: all 200ms ease;
+  transition:
+    scale 50ms cubic-bezier(.5, -.3, .1, 1.5);
+  will-change: scale;
+  position: relative;
+  outline-color: var(--n-100);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    outline-color: inherit;
+  }
 
   &.outlined {
-    outline-color: #ffffff42;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: -2px;
+    background-color: var(--n-400);
+  }
+  &:where(.outlined) {
+    outline-color: var(--n-100);
+  }
+  &.tonal {
     background-color: transparent;
-    --btn-outline-offset: -2px;
-    // &:hover {
-    //   outline-width: 20px;
-    //   color: var(--text-1);
-    //   --btn-outline-offset: -20px;
-    // }
+    box-shadow: none;
+    outline-color: currentColor;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      background-color: currentColor;
+      border-radius: inherit;
+      pointer-events: none;
+      transition: opacity 150ms;
+    }
+    &:active::before {
+      opacity: 0.05;
+    }
   }
-  &.flat {
-    --btn-shadow: none;
-  }
-  &.block {
-    width: 100%;
+
+  &:focus-visible {
+    outline: 2px solid var(--info);
   }
   &:active {
-    outline-color: #ffffff52;
-    animation: dropWave 1s forwards;
-  }
-  &:focus-within {
-    outline-width: 2px;
-    outline-color: inherit;
-    outline-offset: 0px;
-  }
-  &:hover {
-    outline-color: inherit;
-    --btn-outline-offset: 0px;
+    --btn-shadow: var(--shadow-1), inset 0 -2px #00000021;
+    scale: .99;
+    @media (hover: none) {
+      scale: 1;
+      &::after {
+        animation: dropWave 350ms forwards;
+      }
+    }
   }
 }
 
 @keyframes dropWave {
   0% {
-    outline-width: 4px;
+    outline-width: 2px;
+    outline-style: solid;
   }
   50%, 100% {
-    outline-color: #ffffff00;
     outline-width: 1px;
-    outline-offset: 15px;
+    outline-color: #ffffff00;
+    outline-offset: 10px;
   }
 }
+
