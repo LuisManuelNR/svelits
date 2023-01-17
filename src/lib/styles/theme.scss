@@ -34,19 +34,6 @@
   --contrast: var(--contrast-light);
 }
 
-.light-theme {
-  color-scheme: light;
-  --brand: var(--brand-light);
-  --n-100: var(--n-100-light);
-  --n-200: var(--n-200-light);
-  --n-300: var(--n-300-light);
-  --n-400: var(--n-400-light);
-  --error: var(--error-light);
-  --success: var(--success-light);
-  --info: var(--info-light);
-  --contrast: var(--contrast-light);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
@@ -60,7 +47,19 @@
     --info: var(--info-dark);
     --contrast: var(--contrast-dark);
   }
+}
 
+.light-theme {
+  color-scheme: light;
+  --brand: var(--brand-light);
+  --n-100: var(--n-100-light);
+  --n-200: var(--n-200-light);
+  --n-300: var(--n-300-light);
+  --n-400: var(--n-400-light);
+  --error: var(--error-light);
+  --success: var(--success-light);
+  --info: var(--info-light);
+  --contrast: var(--contrast-light);
 }
 
 .dark-theme {
@@ -79,6 +78,7 @@
 .brand {
   background-color: var(--brand);
   outline-color: var(--brand);
+  border-color: var(--brand);
 }
 
 .brand-text {
@@ -88,6 +88,7 @@
 .n-100 {
   background-color: var(--n-100);
   outline-color: var(--n-100);
+  border-color: var(--n-100);
 }
 
 .n-100-text {
@@ -97,6 +98,7 @@
 .n-200 {
   background-color: var(--n-200);
   outline-color: var(--n-200);
+  border-color: var(--n-200);
 }
 
 .n-200-text {
@@ -106,6 +108,7 @@
 .n-300 {
   background-color: var(--n-300);
   outline-color: var(--n-300);
+  border-color: var(--n-300);
 }
 
 .n-300-text {
@@ -115,6 +118,7 @@
 .n-400 {
   background-color: var(--n-400);
   outline-color: var(--n-400);
+  border-color: var(--n-400);
 }
 
 .n-400-text {
@@ -124,6 +128,7 @@
 .error {
   background-color: var(--error);
   outline-color: var(--error);
+  border-color: var(--error);
 }
 
 .error-text {
@@ -133,6 +138,7 @@
 .success {
   background-color: var(--success);
   outline-color: var(--success);
+  border-color: var(--success);
 }
 
 .success-text {
@@ -142,6 +148,7 @@
 .info {
   background-color: var(--info);
   outline-color: var(--info);
+  border-color: var(--info);
 }
 
 .info-text {
@@ -151,6 +158,7 @@
 .contrast {
   background-color: var(--contrast);
   outline-color: var(--contrast);
+  border-color: var(--contrast);
 }
 
 .contrast-text {

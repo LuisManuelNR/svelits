@@ -1,4 +1,4 @@
-.btn {
+button, .btn {
   --btn-shadow: var(--shadow-2), inset 0 -2px #00000021;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -22,6 +22,7 @@
   will-change: scale;
   position: relative;
   outline-color: var(--n-100);
+  vertical-align: bottom;
 
   &::after {
     content: '';
@@ -29,6 +30,30 @@
     inset: 0;
     border-radius: inherit;
     outline-color: inherit;
+  }
+
+  &.fab {
+    position: fixed;
+    bottom: var(--size-3);
+    left: var(--size-3);
+    z-index: 4;
+    &.rigth {
+      right: var(--size-3);
+      left: auto;
+    }
+    &.top {
+      top: var(--size-3);
+      bottom: auto;
+    }
+  }
+
+  &.icon {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    min-width: auto;
   }
 
   &.outlined {

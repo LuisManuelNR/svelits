@@ -60,7 +60,7 @@ export function generateTheme(config?: ThemeConfig) {
   return result
 }
 
-function generateAllVars (useConf: ThemeConfig) {
+function generateAllVars(useConf: ThemeConfig) {
   let result = ':root {\n'
   for (const theme in useConf) {
     for (const colorName in useConf[theme]) {
@@ -77,7 +77,7 @@ function generateAllVars (useConf: ThemeConfig) {
   return result
 }
 
-function generateLocalTheme (theme: ThemeConfig[string], themeName: string, useColorScheme = false) {
+function generateLocalTheme(theme: ThemeConfig[string], themeName: string, useColorScheme = false) {
   const scheme = isLightColor(theme.contrast) ? 'dark' : 'light'
   const prefix = useColorScheme ? `.${scheme}-theme` : ':root'
   let result = `${prefix} {\n\tcolor-scheme: ${scheme};\n`
@@ -88,13 +88,13 @@ function generateLocalTheme (theme: ThemeConfig[string], themeName: string, useC
   return result
 }
 
-function generateColorClasses (useConf: ThemeConfig) {
+function generateColorClasses(useConf: ThemeConfig) {
   let result = ''
   const processedColors: Record<string, boolean> = {}
   for (const theme in useConf) {
     for (const colorName in useConf[theme]) {
       if (processedColors[colorName]) continue
-      result += `.${colorName} { background-color: var(--${colorName}); outline-color: var(--${colorName}); }
+      result += `.${colorName} { background-color: var(--${colorName}); outline-color: var(--${colorName}); border-color: var(--${colorName}); }
       .${colorName}-text { color: var(--${colorName}) }\n`
       processedColors[colorName] = true
     }
@@ -114,7 +114,7 @@ function mergeDeep<T extends Record<string, any>>(target: T, source: T): T {
   return _target
 }
 
-function isLightColor (hexColor = '') {
+function isLightColor(hexColor = '') {
   try {
     if (!hexColor) return false
     const hex = hexColor.replace('#', '')

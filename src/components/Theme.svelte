@@ -6,7 +6,7 @@
 
 	let mainAppElement: HTMLElement
 	onMount(() => {
-		mainAppElement = document.querySelector('.sv-app') || document.body
+		mainAppElement = document.querySelector(':root') || document.body
 	})
 	let oldSelected = ''
 	$: {
@@ -23,27 +23,24 @@
 	}
 </script>
 
-<section class="pa-5">
-	<h2>Theme</h2>
-	<div class="options">
-		{#each Object.keys(DEFAULTS_THEME) as theme}
-			<label>
-				<input type="radio" bind:group={selected} name={theme} value={theme} />
-				{theme}
-			</label>
-		{/each}
-	</div>
-	<button class="btn" on:click={generateAndCopy}> generate and copy </button>
-	<h3>{selected}</h3>
-	<div class="theme-container pa-4">
-		{#each colors as color}
-			<div>
-				<p>.{color}</p>
-				<div class="box {color}" />
-			</div>
-		{/each}
-	</div>
-</section>
+<div class="options">
+	{#each Object.keys(DEFAULTS_THEME) as theme}
+		<label>
+			<input type="radio" bind:group={selected} name={theme} value={theme} />
+			{theme}
+		</label>
+	{/each}
+</div>
+<button class="btn" on:click={generateAndCopy}> generate and copy </button>
+<h3>{selected}</h3>
+<div class="theme-container pa-4">
+	{#each colors as color}
+		<div>
+			<p>.{color}</p>
+			<div class="box {color}" />
+		</div>
+	{/each}
+</div>
 
 <style>
 	.options {

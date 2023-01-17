@@ -42,6 +42,7 @@
     overflow: visible; /* Show the overflow in Edge and IE */
     height: 0; /* Add the correct box sizing in Firefox */
     color: inherit; /* Correct border color in Firefox. */
+    border-style: solid;
   }
   
   details,
@@ -135,11 +136,13 @@
   
   [type='search'] {
     -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+    appearance: textfield;
     outline-offset: -2px; /* Correct the outline style in Safari */
   }
   
   [type='search']::-webkit-search-decoration {
     -webkit-appearance: none; /* Remove the inner padding in Chrome and Safari on macOS */
+    appearance: none;
   }
   
   textarea {
@@ -200,6 +203,7 @@
   [type='reset'],
   [type='submit'] {
     -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */
+    appearance: button;
   }
   
   /* Remove the default button styling in all browsers */
@@ -223,6 +227,7 @@
   select {
     -moz-appearance: none; /* Firefox 36+ */
     -webkit-appearance: none; /* Chrome 41+ */
+    appearance: none;
   }
   
   select::-ms-expand {
@@ -245,6 +250,7 @@
   ::-webkit-file-upload-button {
     /* Correct the inability to style clickable types in iOS and Safari */
     -webkit-appearance: button;
+    appearance: button;
     color: inherit;
     font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
   }
