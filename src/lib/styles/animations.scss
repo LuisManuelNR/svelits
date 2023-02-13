@@ -1,9 +1,74 @@
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes scale {
-  0% { scale: .9; }
-  100% { scale: 1; }
+	0% {
+		scale: 0.9;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+@keyframes shake {
+
+	10%,
+	90% {
+		transform: translate3d(-2px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(3px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-7px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(7px, 0, 0);
+	}
+}
+
+.shake-animation {
+	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes dropWave {
+	0% {
+		outline-width: 2px;
+		outline-style: solid;
+	}
+
+	50%,
+	100% {
+		outline-width: 1px;
+		outline-color: #ffffff00;
+		outline-offset: 10px;
+	}
+}
+
+@keyframes slideX {
+	0% {
+		translate: -100%;
+	}
+
+	100% {
+		translate: 0;
+	}
 }

@@ -1,166 +1,232 @@
+/* ESTE ERCHIVO ES AUTOGENERADO */
 :root {
-  --brand-light: #ff6047;
-  --n-100-light: #f0f1f4;
-  --n-200-light: #e1e4ea;
-  --n-300-light: #d3d7df;
-  --n-400-light: #c4c9d4;
-  --error-light: #D72638;
-  --success-light: #169873;
-  --info-light: #FFD3BA;
-  --contrast-light: #212529;
+	--brand-light: #004D43;
+	--secondary-light: #EBAA20;
+	--accent-light: #D9017A;
+	--infantil-light: #652C90;
+	--trigger-light: #51C531;
+	--error-light: #B71C1C;
+	--success-light: #74AD83;
+	--info-light: #6CC2E3;
+	--n-100-light: #f5f5f5;
+	--n-200-light: #ebebeb;
+	--n-300-light: #bdbdbd;
+	--n-400-light: #666666;
+	--n-500-light: #212121;
 
-  --brand-dark: #D64933;
-  --n-100-dark: #555e77;
-  --n-200-dark: #495269;
-  --n-300-dark: #404859;
-  --n-400-dark: #363c4a;
-  --error-dark: #D72638;
-  --success-dark: #169873;
-  --info-dark: #FFD3BA;
-  --contrast-dark: #d8dee3;
+	--brand-dark: #004D43;
+	--secondary-dark: #EBAA20;
+	--accent-dark: #D9017A;
+	--infantil-dark: #652C90;
+	--trigger-dark: #51C531;
+	--error-dark: #B71C1C;
+	--success-dark: #74AD83;
+	--info-dark: #6CC2E3;
+	--n-100-dark: #202222;
+	--n-200-dark: #2a2d2c;
+	--n-300-dark: #454a49;
+	--n-400-dark: #909897;
+	--n-500-dark: #d2d5d5;
 
 }
 
 :root {
-  color-scheme: light;
-  --brand: var(--brand-light);
-  --n-100: var(--n-100-light);
-  --n-200: var(--n-200-light);
-  --n-300: var(--n-300-light);
-  --n-400: var(--n-400-light);
-  --error: var(--error-light);
-  --success: var(--success-light);
-  --info: var(--info-light);
-  --contrast: var(--contrast-light);
+	color-scheme: light;
+	--brand: var(--brand-light);
+	--secondary: var(--secondary-light);
+	--accent: var(--accent-light);
+	--infantil: var(--infantil-light);
+	--trigger: var(--trigger-light);
+	--error: var(--error-light);
+	--success: var(--success-light);
+	--info: var(--info-light);
+	--n-100: var(--n-100-light);
+	--n-200: var(--n-200-light);
+	--n-300: var(--n-300-light);
+	--n-400: var(--n-400-light);
+	--n-500: var(--n-500-light);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --brand: var(--brand-dark);
-    --n-100: var(--n-100-dark);
-    --n-200: var(--n-200-dark);
-    --n-300: var(--n-300-dark);
-    --n-400: var(--n-400-dark);
-    --error: var(--error-dark);
-    --success: var(--success-dark);
-    --info: var(--info-dark);
-    --contrast: var(--contrast-dark);
-  }
+	:root {
+		color-scheme: dark;
+		--brand: var(--brand-dark);
+		--secondary: var(--secondary-dark);
+		--accent: var(--accent-dark);
+		--infantil: var(--infantil-dark);
+		--trigger: var(--trigger-dark);
+		--error: var(--error-dark);
+		--success: var(--success-dark);
+		--info: var(--info-dark);
+		--n-100: var(--n-100-dark);
+		--n-200: var(--n-200-dark);
+		--n-300: var(--n-300-dark);
+		--n-400: var(--n-400-dark);
+		--n-500: var(--n-500-dark);
+	}
+
 }
 
 .light-theme {
-  color-scheme: light;
-  --brand: var(--brand-light);
-  --n-100: var(--n-100-light);
-  --n-200: var(--n-200-light);
-  --n-300: var(--n-300-light);
-  --n-400: var(--n-400-light);
-  --error: var(--error-light);
-  --success: var(--success-light);
-  --info: var(--info-light);
-  --contrast: var(--contrast-light);
+	color-scheme: light;
+	--brand: var(--brand-light);
+	--secondary: var(--secondary-light);
+	--accent: var(--accent-light);
+	--infantil: var(--infantil-light);
+	--trigger: var(--trigger-light);
+	--error: var(--error-light);
+	--success: var(--success-light);
+	--info: var(--info-light);
+	--n-100: var(--n-100-light);
+	--n-200: var(--n-200-light);
+	--n-300: var(--n-300-light);
+	--n-400: var(--n-400-light);
+	--n-500: var(--n-500-light);
 }
 
 .dark-theme {
-  color-scheme: dark;
-  --brand: var(--brand-dark);
-  --n-100: var(--n-100-dark);
-  --n-200: var(--n-200-dark);
-  --n-300: var(--n-300-dark);
-  --n-400: var(--n-400-dark);
-  --error: var(--error-dark);
-  --success: var(--success-dark);
-  --info: var(--info-dark);
-  --contrast: var(--contrast-dark);
+	color-scheme: dark;
+	--brand: var(--brand-dark);
+	--secondary: var(--secondary-dark);
+	--accent: var(--accent-dark);
+	--infantil: var(--infantil-dark);
+	--trigger: var(--trigger-dark);
+	--error: var(--error-dark);
+	--success: var(--success-dark);
+	--info: var(--info-dark);
+	--n-100: var(--n-100-dark);
+	--n-200: var(--n-200-dark);
+	--n-300: var(--n-300-dark);
+	--n-400: var(--n-400-dark);
+	--n-500: var(--n-500-dark);
 }
 
 .brand {
-  background-color: var(--brand);
-  outline-color: var(--brand);
-  border-color: var(--brand);
+	background-color: var(--brand);
+	outline-color: var(--brand);
+	border-color: var(--brand);
 }
 
 .brand-text {
-  color: var(--brand)
+	color: var(--brand)
 }
 
-.n-100 {
-  background-color: var(--n-100);
-  outline-color: var(--n-100);
-  border-color: var(--n-100);
+.secondary {
+	background-color: var(--secondary);
+	outline-color: var(--secondary);
+	border-color: var(--secondary);
 }
 
-.n-100-text {
-  color: var(--n-100)
+.secondary-text {
+	color: var(--secondary)
 }
 
-.n-200 {
-  background-color: var(--n-200);
-  outline-color: var(--n-200);
-  border-color: var(--n-200);
+.accent {
+	background-color: var(--accent);
+	outline-color: var(--accent);
+	border-color: var(--accent);
 }
 
-.n-200-text {
-  color: var(--n-200)
+.accent-text {
+	color: var(--accent)
 }
 
-.n-300 {
-  background-color: var(--n-300);
-  outline-color: var(--n-300);
-  border-color: var(--n-300);
+.infantil {
+	background-color: var(--infantil);
+	outline-color: var(--infantil);
+	border-color: var(--infantil);
 }
 
-.n-300-text {
-  color: var(--n-300)
+.infantil-text {
+	color: var(--infantil)
 }
 
-.n-400 {
-  background-color: var(--n-400);
-  outline-color: var(--n-400);
-  border-color: var(--n-400);
+.trigger {
+	background-color: var(--trigger);
+	outline-color: var(--trigger);
+	border-color: var(--trigger);
 }
 
-.n-400-text {
-  color: var(--n-400)
+.trigger-text {
+	color: var(--trigger)
 }
 
 .error {
-  background-color: var(--error);
-  outline-color: var(--error);
-  border-color: var(--error);
+	background-color: var(--error);
+	outline-color: var(--error);
+	border-color: var(--error);
 }
 
 .error-text {
-  color: var(--error)
+	color: var(--error)
 }
 
 .success {
-  background-color: var(--success);
-  outline-color: var(--success);
-  border-color: var(--success);
+	background-color: var(--success);
+	outline-color: var(--success);
+	border-color: var(--success);
 }
 
 .success-text {
-  color: var(--success)
+	color: var(--success)
 }
 
 .info {
-  background-color: var(--info);
-  outline-color: var(--info);
-  border-color: var(--info);
+	background-color: var(--info);
+	outline-color: var(--info);
+	border-color: var(--info);
 }
 
 .info-text {
-  color: var(--info)
+	color: var(--info)
 }
 
-.contrast {
-  background-color: var(--contrast);
-  outline-color: var(--contrast);
-  border-color: var(--contrast);
+.n-100 {
+	background-color: var(--n-100);
+	outline-color: var(--n-100);
+	border-color: var(--n-100);
 }
 
-.contrast-text {
-  color: var(--contrast)
+.n-100-text {
+	color: var(--n-100)
+}
+
+.n-200 {
+	background-color: var(--n-200);
+	outline-color: var(--n-200);
+	border-color: var(--n-200);
+}
+
+.n-200-text {
+	color: var(--n-200)
+}
+
+.n-300 {
+	background-color: var(--n-300);
+	outline-color: var(--n-300);
+	border-color: var(--n-300);
+}
+
+.n-300-text {
+	color: var(--n-300)
+}
+
+.n-400 {
+	background-color: var(--n-400);
+	outline-color: var(--n-400);
+	border-color: var(--n-400);
+}
+
+.n-400-text {
+	color: var(--n-400)
+}
+
+.n-500 {
+	background-color: var(--n-500);
+	outline-color: var(--n-500);
+	border-color: var(--n-500);
+}
+
+.n-500-text {
+	color: var(--n-500)
 }

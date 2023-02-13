@@ -1,7 +1,5 @@
 {
 	"editor.formatOnSave": true,
-	"cssvar.files": [
-    "src/lib/styles/theme.scss",
-    "src/lib/styles/variables.scss",
-  ],
+	"cssvar.enable": true,
+	"cssvar.files": ["src/lib/styles/*.scss"]
 }

@@ -1,0 +1,66 @@
+:root {
+	font-family: var(--font-family-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-serif);
+}
+
+.text-h1 {
+	font-size: var(--font-size-fluid-3);
+	font-weight: 700;
+	line-height: 1.15em;
+}
+
+.text-h2 {
+	font-size: var(--font-size-fluid-2);
+	font-weight: 700;
+	line-height: 1.5em;
+}
+
+.text-h3 {
+	font-size: var(--font-size-fluid-2);
+	font-weight: 600;
+}
+
+.text-h4 {
+	font-size: var(--font-size-fluid-2);
+	font-weight: 400;
+}
+
+.text-h5 {
+	font-size: var(--font-size-5);
+	font-weight: 400;
+}
+
+.text-h6 {
+	font-size: var(--font-size-3);
+	font-weight: 600;
+}
+
+.subtitle-1 {
+	font-size: var(--font-size-2);
+	font-weight: 400;
+	letter-spacing: 0.15px;
+	font-family: var(--font-family-serif);
+}
+
+.subtitle-2 {
+	font-weight: 600;
+	font-family: var(--font-family-serif);
+}
+
+.body-2 {
+	font-size: var(--font-size-0);
+	letter-spacing: .25px;
+}
+
+.caption {
+	font-size: var(--font-size-0);
+	letter-spacing: 0.4px;
+}

@@ -1,0 +1,129 @@
+@use './breakpoints.scss' as breakpoints;
+
+.d-flex {
+	display: flex;
+}
+
+.d-grid {
+	display: grid;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-start {
+	justify-content: start;
+}
+
+.justify-end {
+	justify-content: end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-self-end {
+	align-self: end;
+}
+
+.align-self-start {
+	align-self: start;
+}
+
+.align-self-center {
+	align-self: center;
+}
+
+.justify-self-end {
+	justify-self: end;
+}
+
+.justify-self-start {
+	justify-self: start;
+}
+
+.justify-self-center {
+	justify-self: center;
+}
+
+.gap-1 {
+	gap: var(--size-1);
+}
+
+.gap-2 {
+	gap: var(--size-2);
+}
+
+.gap-3 {
+	gap: var(--size-3);
+}
+
+.gap-4 {
+	gap: var(--size-4);
+}
+
+.grid-area {
+	display: grid;
+
+	@include breakpoints.for-size(xs) {
+		grid-template-areas: var(--xs-area);
+	}
+
+	@include breakpoints.for-size(sm) {
+		grid-template-areas: var(--sm-area, var(--xs-area));
+	}
+
+	@include breakpoints.for-size(md) {
+		grid-template-areas: var(--md-area, var(--sm-area));
+	}
+
+	@include breakpoints.for-size(lg) {
+		grid-template-areas: var(--lg-area, var(--md-area));
+	}
+}
+
+.grid-columns {
+	display: grid;
+	--xs-area: 1fr;
+	--sm-area: var(--xs-area);
+	--md-area: var(--sm-area);
+	--lg-area: var(--md-area);
+
+	@include breakpoints.for-size(xs) {
+		grid-template-columns: var(--xs-area);
+	}
+
+	@include breakpoints.for-size(sm) {
+		grid-template-columns: var(--sm-area);
+	}
+
+	@include breakpoints.for-size(md) {
+		grid-template-columns: var(--md-area);
+	}
+
+	@include breakpoints.for-size(lg) {
+		grid-template-columns: var(--lg-area);
+	}
+}

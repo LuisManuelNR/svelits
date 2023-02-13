@@ -1,0 +1,61 @@
+@use './fonts.scss';
+@use './reset.scss';
+@use './variables.scss';
+@use './breakpoints.scss';
+@use './typography.scss';
+@use './animations.scss';
+@use './theme.scss';
+
+@use './layout.scss';
+@use './buttons.scss';
+@use './cards.scss';
+
+@use './utils.scss';
+
+:root {
+	accent-color: var(--secondary);
+	background-color: var(--n-100);
+	color: var(--n-500);
+	block-size: 100%;
+	min-height: 100vh;
+	scrollbar-gutter: stable;
+	padding-inline: var(--size-4);
+
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+	}
+
+	scroll-behavior: smooth;
+	line-height: 1.5;
+	font-size: 100%;
+	/*16px*/
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:has(dialog[open]) {
+		/* prevent scroll when dialog is open */
+		overflow: hidden;
+	}
+
+	* {
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+
+		&::-webkit-scrollbar {
+			width: 4px;
+			height: 4px;
+			background-color: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			width: 4px;
+			height: 4px;
+			background-color: var(--n-500);
+		}
+	}
+}
